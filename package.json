@@ -1,0 +1,22 @@
+{
+  "name": "api-test-automation",
+  "version": "1.0.0",
+  "description": "REST API test automation for Restful-Booker with Playwright (TypeScript) and Postman/Newman",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:postman": "newman run postman/restful-booker.postman_collection.json -e postman/restful-booker.postman_environment.json",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^20.19.43",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "newman": "^6.2.2",
+    "typescript": "^5.9.3"
+  }
+}

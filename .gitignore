@@ -1,0 +1,10 @@
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/newman/
+.env
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
